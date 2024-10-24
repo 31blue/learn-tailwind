@@ -1,0 +1,22 @@
+{
+  "name": "learn-tailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "run-p serve watch",
+    "serve": "live-server",
+    "start": "live-server --port=8080 --host=localhost --open=./index.html",
+    "tailwind": "tailwindcss -i ./src/styles/input.css -o ./src/styles/main.css",
+    "watch": "npm run tailwind -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.4.14"
+  }
+}
